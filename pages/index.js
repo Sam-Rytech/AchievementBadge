@@ -55,5 +55,24 @@ export default function Home() {
         } finally {
           setMinting(false)
         }
-      }
+    }
+    
+    return (
+      <div className="min-h-screen flex flex-col items-center justify-center p-6 bg-gray-50">
+        <Header />
+
+        {!account ? (
+          <Button onClick={connectWallet}>Connect Wallet</Button>
+        ) : (
+          <>
+            <p className="mb-4">Connected: {account}</p>
+            <Button onClick={mintBadge} disabled={minting}>
+              {minting ? 'Minting...' : 'Claim Achievement Badge'}
+            </Button>
+          </>
+        )}
+
+        {message && <p className="mt-4 text-center text-red-600">{message}</p>}
+      </div>
+    )
 }
