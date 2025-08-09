@@ -1,0 +1,6 @@
+{
+  "name": "Achievement Badge #1",
+  "description": "Congrats on completing your first task!",
+  "image": "ipfs://bafybeia5xhwo2b44lsqsvnnhmbaczavtvfzrwvtwz5geongsykixoga2cm",
+  "attributes": [{ "trait_type": "Level", "value": "Beginner" }]
+}
