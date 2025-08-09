@@ -1,3 +1,5 @@
 import { useState } from 'react'
 import { ethers } from 'ethers'
 import AchievementBadgeABI from '../lib/AchievementBadge.json'
+import Button from '../components/Button'
+import Header from '../components/Header'
