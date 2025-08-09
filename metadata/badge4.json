@@ -1,0 +1,6 @@
+{
+  "name": "Achievement Badge #4",
+  "description": "Congrats on completing your fourth task!",
+  "image": "ipfs://bafybeiekyqyigd6acn4dql4qgnicyqdw4miajw7sxbldfoj24l3badys7m",
+  "attributes": [{ "trait_type": "Level", "value": "Progress" }]
+}
