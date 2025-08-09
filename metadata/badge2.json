@@ -1,6 +1,6 @@
 {
-  "name": "Achievement Badge #1",
-  "description": "Congrats on completing your first task!",
+  "name": "Achievement Badge #2",
+  "description": "Congrats on completing your second task!",
   "image": "ipfs://bafybeicffpzlrupntyd6ztz7455ny7d5th6frpnqavcwj53qhkmi2e75mm",
-  "attributes": [{ "trait_type": "Level", "value": "Beginner" }]
+  "attributes": [{ "trait_type": "Level", "value": "Intermidiate" }]
 }
