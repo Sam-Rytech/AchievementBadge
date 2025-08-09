@@ -27,4 +27,33 @@ export default function Home() {
         console.error(error)
       }
     }
+
+      async function mintBadge() {
+        if (!account) {
+          alert('Connect your wallet first')
+          return
+        }
+        try {
+          setMinting(true)
+          setMessage('Minting badge...')
+
+          const provider = new ethers.BrowserProvider(window.ethereum)
+          const signer = await provider.getSigner()
+          const contract = new ethers.Contract(
+            contractAddress,
+            AchievementBadgeABI.abi,
+            signer
+          )
+
+          const tx = await contract.mintBadge(account)
+          await tx.wait()
+
+          setMessage('Badge minted successfully!')
+        } catch (error) {
+          console.error(error)
+          setMessage('Minting failed: ' + (error?.message || error))
+        } finally {
+          setMinting(false)
+        }
+      }
 }
