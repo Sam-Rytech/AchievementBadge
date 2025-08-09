@@ -9,7 +9,7 @@ export default function Home() {
     const [minting, setMinting] = useState(false)
     const [message, setMessage] = useState('')
 
-    const contractAddress = process.env.NEXT_PUBLIC_CONTRACT_ADDRESS
+    const contractAddress = "0x7fb15ff3db52e272d89e699f8107416e3ed1a951"
 
     async function connectWallet() {
       if (!window.ethereum) {
