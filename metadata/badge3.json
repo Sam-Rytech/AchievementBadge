@@ -1,0 +1,6 @@
+{
+  "name": "Achievement Badge #3",
+  "description": "Congrats on completing your third task!",
+  "image": "ipfs://bafybeidf4wvysvctpl5uiqkdael5o3zduwvu4nolnkmfxm6qylyuosses4",
+  "attributes": [{ "trait_type": "Level", "value": "Amateur" }]
+}
